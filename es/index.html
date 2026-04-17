@@ -904,7 +904,11 @@
                 </div>
                 <div class="contact-form">
                     <h3>Envíanos un Mensaje</h3>
-                    <form action="https://formspree.io/f/placeholder" method="POST">
+                    <form action="https://formsubmit.co/li@joyfulyoga.kiwi.nz" method="POST">
+                        <input type="hidden" name="_subject" value="Nueva consulta desde Little English Star">
+                        <input type="hidden" name="_next" value="https://www.littleenglishstar.com/es/#contact">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Tu Nombre</label>
@@ -974,16 +978,10 @@
             }
         });
 
-        document.querySelector('.contact-form form').addEventListener('submit', function(e) {
-            e.preventDefault();
+        document.querySelector('.contact-form form').addEventListener('submit', function() {
             const btn = this.querySelector('button');
-            btn.textContent = '¡Mensaje Enviado! ✓';
-            btn.style.background = '#25D366';
-            setTimeout(() => {
-                btn.innerHTML = 'Enviar Mensaje &#10132;';
-                btn.style.background = '';
-                this.reset();
-            }, 3000);
+            btn.textContent = 'Enviando...';
+            btn.disabled = true;
         });
 
         const observer = new IntersectionObserver((entries) => {
