@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little English Star School | Clases de Inglés para Niños en Valencia</title>
+    <meta name="description" content="Clases de inglés divertidas y efectivas para niños en La Cañada, Paterna, Valencia. Profesora certificada TESOL con experiencia Montessori. ¡Deja que tus hijos brillen!">
+    <meta name="keywords" content="clases inglés niños Valencia, escuela inglés niños Paterna, clases inglés La Cañada, profesora TESOL Valencia, cursos inglés niños España">
+    <meta name="author" content="Little English Star School">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.littleenglishstar.com/es/">
+    <link rel="alternate" hreflang="en" href="https://www.littleenglishstar.com/">
+    <link rel="alternate" hreflang="es" href="https://www.littleenglishstar.com/es/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Little English Star School | Clases de Inglés para Niños en Valencia">
+    <meta property="og:description" content="Clases de inglés divertidas y efectivas para niños en Valencia. Profesora certificada TESOL con experiencia Montessori. ¡Deja que tus hijos brillen!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.littleenglishstar.com/es/">
+    <meta property="og:image" content="https://www.littleenglishstar.com/littleenglishstar-logo.png">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Little English Star School | Clases de Inglés para Niños">
+    <meta name="twitter:description" content="Clases de inglés divertidas y efectivas para niños en Valencia. Profesora certificada TESOL con formación Montessori.">
+    <meta name="twitter:image" content="https://www.littleenglishstar.com/littleenglishstar-logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="apple-touch-icon" href="../favicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #2E6BC6;
+            --primary-light: #4A90D9;
+            --primary-dark: #1E4A8A;
+            --accent-pink: #F5418D;
+            --accent-gold: #FFD700;
+            --accent-red: #DC3545;
+            --text-dark: #2D3436;
+            --text-medium: #555;
+            --text-light: #777;
+            --bg-light: #F8FBFF;
+            --bg-warm: #FFF9F0;
+            --white: #FFFFFF;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --shadow-hover: 0 8px 30px rgba(0,0,0,0.12);
+            --radius: 16px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============ HEADER ============ */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            transition: var(--transition);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            color: var(--accent-pink);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        nav a {
+            padding: 8px 16px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--primary);
+            background: var(--bg-light);
+        }
+
+        nav a.cta-btn {
+            background: var(--primary);
+            color: var(--white);
+            font-weight: 600;
+            padding: 10px 24px;
+            border-radius: 50px;
+        }
+
+        nav a.cta-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+            color: var(--primary);
+            padding: 8px;
+        }
+
+        /* ============ HERO ============ */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #E8F4FD 0%, #FFF0F5 50%, #FFF9E6 100%);
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(46,107,198,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(245,65,141,0.06) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero .container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 560px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            box-shadow: var(--shadow);
+            margin-bottom: 24px;
+        }
+
+        .hero-badge::before {
+            content: '🌟';
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .hero h1 .highlight {
+            color: var(--primary);
+        }
+
+        .hero h1 .highlight-pink {
+            color: var(--accent-pink);
+        }
+
+        .hero .tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-pink);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            margin-bottom: 32px;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(46,107,198,0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(46,107,198,0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image img {
+            max-width: 420px;
+            width: 100%;
+            filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        /* ============ STATS BAR ============ */
+        .stats-bar {
+            background: var(--white);
+            padding: 40px 0;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.04), 0 4px 20px rgba(0,0,0,0.04);
+            position: relative;
+            z-index: 3;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            text-align: center;
+        }
+
+        .stat-item { padding: 8px; }
+
+        .stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        /* ============ SECTIONS ============ */
+        section { padding: 100px 0; }
+
+        .section-header {
+            text-align: center;
+            max-width: 680px;
+            margin: 0 auto 60px;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+
+        /* ============ WHY US ============ */
+        .why-us { background: var(--bg-light); }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .why-image {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .why-image img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .why-content h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 20px; color: var(--text-dark); }
+        .why-content p { font-size: 1.05rem; color: var(--text-medium); margin-bottom: 28px; line-height: 1.8; }
+
+        .why-features { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+
+        .why-features li { display: flex; align-items: flex-start; gap: 14px; font-size: 1rem; color: var(--text-dark); }
+
+        .why-features li .icon {
+            flex-shrink: 0; width: 36px; height: 36px;
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+            border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem;
+        }
+
+        .why-features li div strong { display: block; margin-bottom: 2px; }
+        .why-features li div span { font-size: 0.9rem; color: var(--text-light); }
+
+        /* ============ COURSES ============ */
+        .courses { background: var(--white); }
+
+        .courses-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+        .course-card {
+            background: var(--white); border-radius: var(--radius); overflow: hidden;
+            box-shadow: var(--shadow); transition: var(--transition); border: 1px solid #f0f0f0;
+        }
+
+        .course-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+
+        .course-card .card-icon { height: 180px; display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+
+        .card-icon-1 { background: linear-gradient(135deg, #E8F4FD, #D1ECFF); }
+        .card-icon-2 { background: linear-gradient(135deg, #FFF0F5, #FFE0EB); }
+        .card-icon-3 { background: linear-gradient(135deg, #FFF9E6, #FFEFB8); }
+        .card-icon-4 { background: linear-gradient(135deg, #E8FDF0, #C1F5D6); }
+
+        .course-card .card-body { padding: 28px; }
+        .course-card h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 8px; color: var(--text-dark); }
+
+        .course-card .age-tag {
+            display: inline-block; font-size: 0.75rem; font-weight: 600; color: var(--primary);
+            background: var(--bg-light); padding: 4px 12px; border-radius: 50px; margin-bottom: 12px;
+        }
+
+        .course-card p { font-size: 0.95rem; color: var(--text-medium); line-height: 1.7; margin-bottom: 16px; }
+        .course-card ul { list-style: none; margin-bottom: 20px; }
+        .course-card ul li { font-size: 0.9rem; color: var(--text-dark); padding: 4px 0; padding-left: 20px; position: relative; }
+        .course-card ul li::before { content: '✓'; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+        .course-card .card-link { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: 0.95rem; color: var(--primary); transition: var(--transition); }
+        .course-card .card-link:hover { gap: 10px; }
+
+        /* ============ ABOUT ============ */
+        .about { background: var(--bg-light); }
+
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .about-content h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 20px; }
+        .about-content p { font-size: 1.05rem; color: var(--text-medium); margin-bottom: 16px; line-height: 1.8; }
+
+        .credentials { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
+
+        .credential {
+            background: var(--white); padding: 20px; border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04); text-align: center; transition: var(--transition);
+        }
+        .credential:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+        .credential .cred-icon { font-size: 2rem; margin-bottom: 8px; }
+        .credential strong { display: block; font-size: 0.95rem; color: var(--text-dark); margin-bottom: 4px; }
+        .credential span { font-size: 0.8rem; color: var(--text-light); }
+
+        .about-image { position: relative; }
+        .about-image img { width: 100%; height: 500px; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); }
+
+        .about-image .experience-badge {
+            position: absolute; bottom: -20px; right: -20px; background: var(--primary); color: var(--white);
+            padding: 20px 28px; border-radius: var(--radius); text-align: center; box-shadow: 0 8px 25px rgba(46,107,198,0.3);
+        }
+        .experience-badge .num { font-family: 'Montserrat', sans-serif; font-size: 2.4rem; font-weight: 800; line-height: 1; }
+        .experience-badge .label { font-size: 0.85rem; font-weight: 500; opacity: 0.9; }
+
+        /* ============ APPROACH ============ */
+        .approach { background: var(--white); }
+        .approach-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+        .approach-card { text-align: center; padding: 40px 24px; border-radius: var(--radius); background: var(--bg-light); transition: var(--transition); }
+        .approach-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+
+        .approach-card .approach-icon {
+            width: 70px; height: 70px; margin: 0 auto 20px;
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+            border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: white;
+        }
+        .approach-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: var(--text-dark); }
+        .approach-card p { font-size: 0.9rem; color: var(--text-medium); line-height: 1.6; }
+
+        /* ============ CONTACT ============ */
+        .contact { background: var(--bg-light); }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .contact-info h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 12px; }
+        .contact-info > p { font-size: 1.05rem; color: var(--text-medium); margin-bottom: 32px; }
+        .contact-methods { display: flex; flex-direction: column; gap: 20px; margin-bottom: 32px; }
+        .contact-method { display: flex; align-items: center; gap: 16px; }
+        .contact-method .method-icon { flex-shrink: 0; width: 50px; height: 50px; background: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; }
+        .contact-method div strong { display: block; font-size: 0.95rem; margin-bottom: 2px; }
+        .contact-method div span, .contact-method div a { font-size: 0.95rem; color: var(--text-medium); }
+        .contact-method div a:hover { color: var(--primary); }
+
+        .contact-form { background: var(--white); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); }
+        .contact-form h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 24px; color: var(--text-dark); }
+        .form-group { margin-bottom: 18px; }
+        .form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--text-dark); margin-bottom: 6px; }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%; padding: 12px 16px; border: 2px solid #e8e8e8; border-radius: 10px;
+            font-family: 'Poppins', sans-serif; font-size: 0.95rem; transition: var(--transition); background: var(--bg-light);
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--primary); background: var(--white); box-shadow: 0 0 0 4px rgba(46,107,198,0.1); }
+        .form-group textarea { height: 120px; resize: vertical; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .contact-form .btn-primary { width: 100%; justify-content: center; padding: 14px; font-size: 1rem; }
+        .map-container { margin-top: 24px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+        .map-container iframe { width: 100%; height: 220px; border: none; }
+
+        /* ============ FOOTER ============ */
+        footer { background: var(--text-dark); color: rgba(255,255,255,0.8); padding: 32px 0 24px; text-align: center; }
+        .footer-copyright { font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-bottom: 12px; }
+        .footer-copyright a { color: rgba(255,255,255,0.8); transition: var(--transition); }
+        .footer-copyright a:hover { color: var(--white); }
+        .footer-sister-link {
+            display: inline-block; padding: 10px 28px; background: var(--accent-pink); color: var(--white);
+            font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.95rem; border-radius: 50px; transition: var(--transition);
+        }
+        .footer-sister-link:hover { background: #E0316F; transform: translateY(-2px); box-shadow: 0 4px 15px rgba(245,65,141,0.4); }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 1024px) {
+            .hero h1 { font-size: 2.6rem; }
+            .hero .tagline { font-size: 1.5rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+            .courses-grid { grid-template-columns: repeat(2, 1fr); }
+            .approach-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner { padding: 8px 16px; }
+            nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+            nav.active { display: flex; }
+            .mobile-toggle { display: block; }
+            .hero .container { flex-direction: column-reverse; text-align: center; gap: 30px; padding-top: 30px; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero .tagline { font-size: 1.3rem; }
+            .hero-buttons { justify-content: center; }
+            .hero-image img { max-width: 280px; }
+            .hero-content { max-width: 100%; }
+            .why-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+            .courses-grid { grid-template-columns: 1fr; }
+            .approach-grid { grid-template-columns: 1fr 1fr; }
+            .section-title { font-size: 2rem; }
+            .credentials { grid-template-columns: 1fr 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .about-image .experience-badge { right: 10px; bottom: -10px; }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.8rem; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .approach-grid { grid-template-columns: 1fr; }
+            .credentials { grid-template-columns: 1fr; }
+            .contact-form { padding: 24px; }
+        }
+
+        /* ============ WHATSAPP FLOAT ============ */
+        .whatsapp-float {
+            position: fixed; bottom: 24px; right: 24px; z-index: 999; width: 60px; height: 60px;
+            background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 15px rgba(37,211,102,0.4); transition: var(--transition);
+        }
+        .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 20px rgba(37,211,102,0.5); }
+        .whatsapp-float svg { width: 32px; height: 32px; fill: white; }
+
+        /* ============ LANGUAGE SWITCHER ============ */
+        .lang-switch {
+            display: inline-flex; align-items: center; gap: 4px; padding: 6px 14px;
+            background: var(--bg-light); border: 2px solid #e0e0e0; border-radius: 50px;
+            font-family: 'Montserrat', sans-serif; font-size: 0.8rem; font-weight: 700;
+            color: var(--text-medium); transition: var(--transition); margin-left: 4px;
+        }
+        .lang-switch:hover { border-color: var(--primary); color: var(--primary); background: var(--white); }
+        .lang-switch .flag { font-size: 1.1rem; line-height: 1; }
+    </style>
+</head>
+<body>
+
+    <!-- ====== HEADER ====== -->
+    <header>
+        <div class="header-inner">
+            <a href="/es/" class="logo">
+                <img src="../favicon.png" alt="Little English Star School">
+                <div class="logo-text">Little English<br><span>Star School</span></div>
+            </a>
+            <button class="mobile-toggle" onclick="document.querySelector('nav').classList.toggle('active')" aria-label="Abrir menú">&#9776;</button>
+            <nav>
+                <a href="#home">Inicio</a>
+                <a href="#why-us">Por Qué</a>
+                <a href="#courses">Cursos</a>
+                <a href="#about">Sobre Mí</a>
+                <a href="#contact" class="cta-btn">Contacto</a>
+                <a href="/" class="lang-switch"><span class="flag">&#127468;&#127463;</span> EN</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Escuela de Inglés Certificada TESOL</div>
+                <h1>Little <span class="highlight">English</span> <span class="highlight-pink">Star</span> School</h1>
+                <div class="tagline">¡Deja que tus hijos brillen!</div>
+                <p>Clases de inglés divertidas y efectivas para niños en La Cañada, Paterna, Valencia. Nuestro enfoque dinámico basado en juegos ayuda a los niños a ganar confianza y fluidez — desde sus primeras palabras hasta la conversación avanzada.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Reserva una Clase Gratis &#10132;</a>
+                    <a href="#courses" class="btn btn-outline">Ver Cursos</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../littleenglishstar-logo.png" alt="Little English Star School - ¡Deja que tus hijos brillen!">
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== STATS BAR ====== -->
+    <div class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">7+</div>
+                    <div class="stat-label">Años en Nueva Zelanda</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Años con Niños</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">C1</div>
+                    <div class="stat-label">IELTS 7.5</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">120h</div>
+                    <div class="stat-label">Certificada TESOL</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== WHY US ====== -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-image">
+                    <img src="../images/why-us.jpg" alt="Niños aprendiendo inglés juntos">
+                </div>
+                <div class="why-content">
+                    <h2>¿Por Qué Aprender Inglés con Nosotros?</h2>
+                    <p>En Little English Star School, creemos que cada niño puede brillar. Nuestras clases están diseñadas para ser divertidas, dinámicas y adaptadas al nivel de cada niño — porque los niños felices aprenden más rápido.</p>
+                    <ul class="why-features">
+                        <li>
+                            <div class="icon">&#127891;</div>
+                            <div>
+                                <strong>Profesora Certificada TESOL</strong>
+                                <span>Certificación TESOL/TEFL de 120 horas acreditada internacionalmente</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">&#127470;&#127487;</div>
+                            <div>
+                                <strong>Inglés a Nivel Nativo</strong>
+                                <span>7 años viviendo en Nueva Zelanda, IELTS 7.5 (C1), Licenciada en Literatura Inglesa</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">&#128118;</div>
+                            <div>
+                                <strong>Experiencia Montessori</strong>
+                                <span>5 años trabajando con niños en escuelas Montessori</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">&#127922;</div>
+                            <div>
+                                <strong>Aprendizaje Divertido con Juegos</strong>
+                                <span>Actividades interactivas, juegos y canciones que hacen que el inglés se quede</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== COURSES ====== -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Nuestros Programas</div>
+                <h2 class="section-title">Cursos para Cada Pequeña Estrella</h2>
+                <p class="section-subtitle">Ofrecemos una variedad de cursos de inglés para jóvenes estudiantes, desde principiantes absolutos hasta hablantes avanzados. Grupos reducidos y atención personalizada.</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="card-icon card-icon-1">&#127752;</div>
+                    <div class="card-body">
+                        <h3>Pequeños Exploradores</h3>
+                        <span class="age-tag">3–5 años</span>
+                        <p>Una introducción lúdica al inglés a través de canciones, cuentos y actividades creativas. Construyendo las primeras palabras y la confianza.</p>
+                        <ul>
+                            <li>Vocabulario básico y pronunciación</li>
+                            <li>Canciones, rimas y movimiento</li>
+                            <li>Cuentacuentos y libros ilustrados</li>
+                            <li>Artes creativas en inglés</li>
+                        </ul>
+                        <a href="#contact" class="card-link">Más información &#10132;</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-icon card-icon-2">&#11088;</div>
+                    <div class="card-body">
+                        <h3>Estrellas en Ascenso</h3>
+                        <span class="age-tag">6–9 años</span>
+                        <p>Construyendo bases sólidas en lectura, escritura y conversación a través de juegos interactivos y proyectos atractivos.</p>
+                        <ul>
+                            <li>Fundamentos de lectura y escritura</li>
+                            <li>Práctica de conversación</li>
+                            <li>Gramática a través de juegos</li>
+                            <li>Proyectos de presentación</li>
+                        </ul>
+                        <a href="#contact" class="card-link">Más información &#10132;</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-icon card-icon-3">&#127775;</div>
+                    <div class="card-body">
+                        <h3>Super Estrellas</h3>
+                        <span class="age-tag">10–14 años</span>
+                        <p>Habilidades avanzadas para comunicadores seguros. Desarrollo de fluidez, pensamiento crítico y preparación para exámenes.</p>
+                        <ul>
+                            <li>Conversación avanzada y debate</li>
+                            <li>Redacción y escritura creativa</li>
+                            <li>Preparación Cambridge (opcional)</li>
+                            <li>Habilidades de presentación</li>
+                        </ul>
+                        <a href="#contact" class="card-link">Más información &#10132;</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-icon card-icon-4">&#127941;</div>
+                    <div class="card-body">
+                        <h3>Estrellas Adolescentes</h3>
+                        <span class="age-tag">15–18 años</span>
+                        <p>Diseñado para adolescentes que quieren dominar el inglés para el colegio, viajes, acceso a la universidad o su futuro profesional.</p>
+                        <ul>
+                            <li>Inglés académico y técnicas de estudio</li>
+                            <li>Preparación IELTS y Cambridge</li>
+                            <li>Hablar en público y entrevistas</li>
+                            <li>Comunicación en el mundo real</li>
+                        </ul>
+                        <a href="#contact" class="card-link">Más información &#10132;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="section-label">Conoce a la Profesora</div>
+                    <h2>Sobre Ruby</h2>
+                    <p>¡Hola! Soy Ruby, la fundadora de Little English Star School. Con un profundo amor por los idiomas y los niños, he dedicado mi carrera a ayudar a los jóvenes estudiantes a descubrir la alegría del inglés.</p>
+                    <p>Después de vivir en Nueva Zelanda durante siete años y obtener mi título en Literatura Inglesa, adquirí un profundo conocimiento del idioma y la cultura. Mis cinco años de experiencia en escuelas Montessori me enseñaron cómo aprenden mejor los niños — a través del juego, la exploración y el estímulo.</p>
+                    <p>Poseo una Certificación TESOL/TEFL de 120 Horas y una puntuación IELTS de 7.5 (nivel C1), garantizando que tu hijo reciba instrucción de una profesora altamente cualificada.</p>
+                    <div class="credentials">
+                        <div class="credential">
+                            <div class="cred-icon">&#127891;</div>
+                            <strong>TESOL/TEFL</strong>
+                            <span>Certificada 120 Horas</span>
+                        </div>
+                        <div class="credential">
+                            <div class="cred-icon">&#128214;</div>
+                            <strong>Literatura Inglesa</strong>
+                            <span>Título Universitario</span>
+                        </div>
+                        <div class="credential">
+                            <div class="cred-icon">&#127463;&#127462;</div>
+                            <strong>IELTS 7.5</strong>
+                            <span>Nivel C1 Avanzado</span>
+                        </div>
+                        <div class="credential">
+                            <div class="cred-icon">&#128118;</div>
+                            <strong>Montessori</strong>
+                            <span>5 Años de Experiencia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="../images/about.jpg" alt="Entorno de aprendizaje en Little English Star School">
+                    <div class="experience-badge">
+                        <div class="num">12+</div>
+                        <div class="label">Años de<br>Experiencia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== APPROACH ====== -->
+    <section class="approach">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Nuestro Método</div>
+                <h2 class="section-title">Cómo Enseñamos</h2>
+                <p class="section-subtitle">Nuestro enfoque pedagógico combina lo mejor de los métodos Montessori con técnicas modernas de aprendizaje de idiomas.</p>
+            </div>
+            <div class="approach-grid">
+                <div class="approach-card">
+                    <div class="approach-icon">&#127922;</div>
+                    <h3>Aprender Jugando</h3>
+                    <p>Juegos, dramatización y actividades prácticas mantienen a los niños motivados y hacen que aprender sea divertido, no trabajo.</p>
+                </div>
+                <div class="approach-card">
+                    <div class="approach-icon">&#128483;</div>
+                    <h3>Hablar desde el Día 1</h3>
+                    <p>Animamos a hablar desde la primera clase. Construir la confianza para comunicarse es nuestra máxima prioridad.</p>
+                </div>
+                <div class="approach-card">
+                    <div class="approach-icon">&#128101;</div>
+                    <h3>Grupos Reducidos</h3>
+                    <p>Máximo 6 alumnos por clase asegura que cada niño reciba atención personalizada y tiempo de práctica suficiente.</p>
+                </div>
+                <div class="approach-card">
+                    <div class="approach-icon">&#128150;</div>
+                    <h3>Ambiente Positivo</h3>
+                    <p>Un ambiente cálido y de apoyo donde los errores se celebran como pasos hacia el dominio del idioma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-label">Contacta con Nosotros</div>
+                    <h2>Contacto</h2>
+                    <p>¿Quieres que tu hijo brille? Reserva una clase de prueba gratuita o haznos cualquier pregunta. ¡Nos encantaría saber de ti!</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">&#128222;</div>
+                            <div>
+                                <strong>Teléfono / WhatsApp</strong>
+                                <a href="https://wa.me/34627770000">+34 627 770 000</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">&#128205;</div>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <span>La Cañada, Paterna<br>Valencia 46182, España</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d-0.4417!3d39.5078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf6edb1a1%3A0x1d0a44fde5d7d06!2sLa%20Ca%C3%B1ada%2C%20Paterna%2C%20Valencia!5e0!3m2!1ses!2ses!4v1" allowfullscreen="" loading="lazy" title="Ubicación de Little English Star School"></iframe>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form action="https://formspree.io/f/placeholder" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Tu Nombre</label>
+                                <input type="text" id="name" name="name" placeholder="ej. María García" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+34 600 000 000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="child-age">Edad del Niño/a</label>
+                            <select id="child-age" name="child-age">
+                                <option value="">Selecciona rango de edad</option>
+                                <option value="3-5">3–5 años</option>
+                                <option value="6-9">6–9 años</option>
+                                <option value="10-14">10–14 años</option>
+                                <option value="15-18">15–18 años</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" placeholder="Cuéntanos sobre tu hijo/a y lo que estás buscando..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje &#10132;</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="container">
+            <div class="footer-copyright">
+                &copy; 2026 Little English Star School | Creado por <a href="https://gobizit.ai" target="_blank" rel="noopener">GoBizIT.ai</a>
+            </div>
+            <a href="https://www.littlemandarinstar.com" target="_blank" rel="noopener" class="footer-sister-link">Visita también: Little Mandarin Star</a>
+        </div>
+    </footer>
+
+    <!-- ====== WHATSAPP BUTTON ====== -->
+    <a href="https://wa.me/34627770000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chatea por WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- ====== SCRIPTS ====== -->
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.06)';
+            }
+        });
+
+        document.querySelector('.contact-form form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button');
+            btn.textContent = '¡Mensaje Enviado! ✓';
+            btn.style.background = '#25D366';
+            setTimeout(() => {
+                btn.innerHTML = 'Enviar Mensaje &#10132;';
+                btn.style.background = '';
+                this.reset();
+            }, 3000);
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.course-card, .approach-card, .credential, .stat-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Little English Star School",
+        "description": "Clases de inglés divertidas y efectivas para niños en La Cañada, Paterna, Valencia. Profesora certificada TESOL con experiencia Montessori.",
+        "url": "https://www.littleenglishstar.com",
+        "logo": "https://www.littleenglishstar.com/littleenglishstar-logo.png",
+        "telephone": "+34627770000",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "La Cañada, Paterna",
+            "addressRegion": "Valencia",
+            "postalCode": "46182",
+            "addressCountry": "ES"
+        },
+        "sameAs": ["https://www.littlemandarinstar.com"],
+        "areaServed": {
+            "@type": "Place",
+            "name": "Valencia, España"
+        }
+    }
+    </script>
+</body>
+</html>

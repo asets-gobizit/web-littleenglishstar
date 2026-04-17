@@ -9,6 +9,8 @@
     <meta name="author" content="Little English Star School">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.littleenglishstar.com/">
+    <link rel="alternate" hreflang="en" href="https://www.littleenglishstar.com/">
+    <link rel="alternate" hreflang="es" href="https://www.littleenglishstar.com/es/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Little English Star School | English Classes for Kids in Valencia">
@@ -1012,6 +1014,34 @@
             height: 32px;
             fill: white;
         }
+
+        /* ============ LANGUAGE SWITCHER ============ */
+        .lang-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 6px 14px;
+            background: var(--bg-light);
+            border: 2px solid #e0e0e0;
+            border-radius: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--text-medium);
+            transition: var(--transition);
+            margin-left: 4px;
+        }
+
+        .lang-switch:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: var(--white);
+        }
+
+        .lang-switch .flag {
+            font-size: 1.1rem;
+            line-height: 1;
+        }
     </style>
 </head>
 <body>
@@ -1030,6 +1060,7 @@
                 <a href="#courses">Courses</a>
                 <a href="#about">About</a>
                 <a href="#contact" class="cta-btn">Contact Us</a>
+                <a href="/es/" class="lang-switch"><span class="flag">&#127466;&#127480;</span> ES</a>
             </nav>
         </div>
     </header>
