@@ -216,7 +216,7 @@
         .hero .container {
             display: flex;
             align-items: center;
-            gap: 60px;
+            gap: 40px;
             position: relative;
             z-index: 2;
         }
@@ -372,12 +372,12 @@
         }
 
         /* ============ SECTIONS ============ */
-        section { padding: 100px 0; }
+        section { padding: 50px 0; }
 
         .section-header {
             text-align: center;
             max-width: 680px;
-            margin: 0 auto 60px;
+            margin: 0 auto 36px;
         }
 
         .section-label {
@@ -410,7 +410,7 @@
         .why-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 60px;
+            gap: 40px;
             align-items: center;
         }
 
@@ -480,7 +480,7 @@
         /* ============ ABOUT ============ */
         .about { background: var(--bg-light); }
 
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
         .about-content h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 20px; }
         .about-content p { font-size: 1.05rem; color: var(--text-medium); margin-bottom: 16px; line-height: 1.8; }
 
@@ -522,7 +522,7 @@
 
         /* ============ CONTACT ============ */
         .contact { background: var(--bg-light); }
-        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
         .contact-info h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 12px; }
         .contact-info > p { font-size: 1.05rem; color: var(--text-medium); margin-bottom: 32px; }
         .contact-methods { display: flex; flex-direction: column; gap: 20px; margin-bottom: 32px; }
@@ -612,7 +612,7 @@
             color: var(--text-medium); transition: var(--transition); margin-left: 4px;
         }
         .lang-switch:hover { border-color: var(--primary); color: var(--primary); background: var(--white); }
-        .lang-switch .flag { font-size: 1.1rem; line-height: 1; }
+        .lang-switch svg { vertical-align: middle; border-radius: 2px; box-shadow: 0 0 1px rgba(0,0,0,0.3); }
     </style>
 </head>
 <body>
@@ -631,7 +631,7 @@
                 <a href="#courses">Cursos</a>
                 <a href="#about">Sobre Mí</a>
                 <a href="#contact" class="cta-btn">Contacto</a>
-                <a href="/" class="lang-switch">EN &#127468;&#127463;</a>
+                <a href="/" class="lang-switch">EN <svg width="20" height="14" viewBox="0 0 60 30"><clipPath id="c"><rect width="60" height="30"/></clipPath><g clip-path="url(#c)"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4" clip-path="url(#c)"/><path d="M30,0V30M0,15H60" stroke="#fff" stroke-width="10"/><path d="M30,0V30M0,15H60" stroke="#C8102E" stroke-width="6"/></g></svg></a>
             </nav>
         </div>
     </header>
