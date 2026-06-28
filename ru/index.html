@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Little English Star School | English Classes for Kids in Valencia</title>
-    <meta name="description" content="Fun and effective English classes for children in La Cañada, Paterna, Valencia. TESOL-certified teacher with Montessori experience. Let your kids shine!">
-    <meta name="keywords" content="English classes kids Valencia, English school children Paterna, La Cañada English lessons, TESOL teacher Valencia, kids English courses Spain">
+    <title>Little English Star School | Уроки английского для детей в Валенсии</title>
+    <meta name="description" content="Увлекательные и эффективные уроки английского для детей в Ла Каньяда, Патерна, Валенсия. Сертифицированный TESOL преподаватель с опытом Монтессори. Пусть ваши дети сияют!">
+    <meta name="keywords" content="уроки английского дети Валенсия, школа английского дети Патерна, уроки английского Ла Каньяда, учитель TESOL Валенсия, курсы английского дети Испания">
     <meta name="author" content="Little English Star School">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.littleenglishstar.com/">
+    <link rel="canonical" href="https://www.littleenglishstar.com/ru/">
     <link rel="alternate" hreflang="en" href="https://www.littleenglishstar.com/">
     <link rel="alternate" hreflang="es" href="https://www.littleenglishstar.com/es/">
     <link rel="alternate" hreflang="ru" href="https://www.littleenglishstar.com/ru/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Little English Star School | English Classes for Kids in Valencia">
-    <meta property="og:description" content="Fun and effective English classes for children in Valencia. TESOL-certified teacher with Montessori experience. Let your kids shine!">
+    <meta property="og:title" content="Little English Star School | Уроки английского для детей в Валенсии">
+    <meta property="og:description" content="Увлекательные и эффективные уроки английского для детей в Валенсии. Сертифицированный TESOL преподаватель с опытом Монтессори. Пусть ваши дети сияют!">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.littleenglishstar.com/">
+    <meta property="og:url" content="https://www.littleenglishstar.com/ru/">
     <meta property="og:image" content="https://www.littleenglishstar.com/littleenglishstar-logo.png">
-    <meta property="og:locale" content="en_ES">
+    <meta property="og:locale" content="ru_RU">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Little English Star School | English Classes for Kids">
-    <meta name="twitter:description" content="Fun and effective English classes for children in Valencia. TESOL-certified, Montessori-trained teacher.">
+    <meta name="twitter:title" content="Little English Star School | Уроки английского для детей">
+    <meta name="twitter:description" content="Увлекательные и эффективные уроки английского для детей в Валенсии. Сертифицированный TESOL преподаватель с подготовкой Монтессори.">
     <meta name="twitter:image" content="https://www.littleenglishstar.com/littleenglishstar-logo.png">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="apple-touch-icon" href="../favicon.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1017,6 +1017,12 @@
         }
 
         /* ============ LANGUAGE SWITCHER ============ */
+        .lang-switcher {
+            display: flex;
+            gap: 6px;
+            margin-left: 8px;
+        }
+
         .lang-switch {
             display: inline-flex;
             align-items: center;
@@ -1051,18 +1057,20 @@
     <header>
         <div class="header-inner">
             <a href="#" class="logo">
-                <img src="favicon.png" alt="Little English Star School">
+                <img src="../favicon.png" alt="Little English Star School">
                 <div class="logo-text">Little English<br><span>Star School</span></div>
             </a>
             <button class="mobile-toggle" onclick="document.querySelector('nav').classList.toggle('active')" aria-label="Toggle menu">&#9776;</button>
             <nav>
-                <a href="#home">Home</a>
-                <a href="#why-us">Why Us</a>
-                <a href="#courses">Courses</a>
-                <a href="#about">About</a>
-                <a href="#contact" class="cta-btn">Contact Us</a>
-                <a href="/es/" class="lang-switch">ES <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" fill="#c60b1e"/><rect y="3.5" width="20" height="7" fill="#ffc400"/></svg></a>
-                <a href="/ru/" class="lang-switch">RU <svg width="20" height="14" viewBox="0 0 9 6"><rect width="9" height="2" fill="#fff"/><rect y="2" width="9" height="2" fill="#0039a6"/><rect y="4" width="9" height="2" fill="#d52b1e"/></svg></a>
+                <a href="#home">Главная</a>
+                <a href="#why-us">Почему мы</a>
+                <a href="#courses">Курсы</a>
+                <a href="#about">О нас</a>
+                <a href="#contact" class="cta-btn">Связаться</a>
+                <div class="lang-switcher">
+                    <a href="/" class="lang-switch">EN <svg width="20" height="14" viewBox="0 0 60 30"><clipPath id="a"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="b"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#a)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#b)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg></a>
+                    <a href="/es/" class="lang-switch">ES <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" fill="#c60b1e"/><rect y="3.5" width="20" height="7" fill="#ffc400"/></svg></a>
+                </div>
             </nav>
         </div>
     </header>
@@ -1071,17 +1079,17 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">TESOL Certified English School</div>
+                <div class="hero-badge">Сертифицированная TESOL школа английского</div>
                 <h1>Little <span class="highlight">English</span> <span class="highlight-pink">Star</span> School</h1>
-                <div class="tagline">Let your kids shine!</div>
-                <p>Fun and effective English classes for children in La Cañada, Paterna, Valencia. Our engaging, game-based approach helps kids build confidence and fluency — from their very first words to advanced conversation.</p>
+                <div class="tagline">Пусть ваши дети сияют!</div>
+                <p>Увлекательные и эффективные уроки английского для детей в Ла Каньяда, Патерна, Валенсия. Наш игровой подход помогает детям обрести уверенность и свободно говорить — от первых слов до продвинутого разговора.</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Book a Free Trial &#10132;</a>
-                    <a href="#courses" class="btn btn-outline">View Courses</a>
+                    <a href="#contact" class="btn btn-primary">Забронировать бесплатный урок &#10132;</a>
+                    <a href="#courses" class="btn btn-outline">Посмотреть курсы</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="littleenglishstar-logo.png" alt="Little English Star School - Let your kids shine">
+                <img src="../littleenglishstar-logo.png" alt="Little English Star School - Пусть ваши дети сияют">
             </div>
         </div>
     </section>
@@ -1092,19 +1100,19 @@
             <div class="stats-grid">
                 <div class="stat-item">
                     <div class="stat-number">7+</div>
-                    <div class="stat-label">Years in New Zealand</div>
+                    <div class="stat-label">Лет в Новой Зеландии</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">5+</div>
-                    <div class="stat-label">Years with Children</div>
+                    <div class="stat-label">Лет работы с детьми</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">C1</div>
-                    <div class="stat-label">IELTS 7.5 Level</div>
+                    <div class="stat-label">IELTS 7.5 уровень</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">120h</div>
-                    <div class="stat-label">TESOL Certified</div>
+                    <div class="stat-number">120ч</div>
+                    <div class="stat-label">Сертификат TESOL</div>
                 </div>
             </div>
         </div>
@@ -1115,38 +1123,38 @@
         <div class="container">
             <div class="why-grid">
                 <div class="why-image">
-                    <img src="images/why-us.jpg" alt="Children learning English together">
+                    <img src="../images/why-us.jpg" alt="Дети изучают английский вместе">
                 </div>
                 <div class="why-content">
-                    <h2>Why Learn with Ruby?</h2>
-                    <p>At Little English Star School, we believe every child can shine. Our classes are designed to be fun, engaging, and tailored to each child's level — because happy kids learn faster.</p>
+                    <h2>Почему стоит учиться с Руби?</h2>
+                    <p>В Little English Star School мы верим, что каждый ребенок может сиять. Наши занятия разработаны так, чтобы быть веселыми, увлекательными и адаптированными к уровню каждого ребенка — потому что счастливые дети учатся быстрее.</p>
                     <ul class="why-features">
                         <li>
                             <div class="icon">&#127891;</div>
                             <div>
-                                <strong>TESOL-Certified Teacher</strong>
-                                <span>120-hour internationally accredited TESOL/TEFL certification</span>
+                                <strong>Сертифицированный TESOL учитель</strong>
+                                <span>120-часовая международная аккредитация TESOL/TEFL</span>
                             </div>
                         </li>
                         <li>
                             <div class="icon">&#127470;&#127487;</div>
                             <div>
-                                <strong>Native-Level English</strong>
-                                <span>7 years living in New Zealand, IELTS 7.5 (C1), English Literature major</span>
+                                <strong>Английский на уровне носителя</strong>
+                                <span>7 лет жизни в Новой Зеландии, IELTS 7.5 (C1), специальность английская литература</span>
                             </div>
                         </li>
                         <li>
                             <div class="icon">&#128118;</div>
                             <div>
-                                <strong>Montessori Experience</strong>
-                                <span>5 years working with children in Montessori schools</span>
+                                <strong>Опыт Монтессори</strong>
+                                <span>5 лет работы с детьми в школах Монтессори</span>
                             </div>
                         </li>
                         <li>
                             <div class="icon">&#127922;</div>
                             <div>
-                                <strong>Fun, Game-Based Learning</strong>
-                                <span>Interactive activities, games, and songs that make English stick</span>
+                                <strong>Игровое обучение</strong>
+                                <span>Интерактивные задания, игры и песни, которые делают изучение английского запоминающимся</span>
                             </div>
                         </li>
                     </ul>
@@ -1159,69 +1167,69 @@
     <section class="courses" id="courses">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Our Programs</div>
-                <h2 class="section-title">Courses for Every Little Star</h2>
-                <p class="section-subtitle">We offer a variety of English courses for young learners, from absolute beginners to advanced speakers. Small groups and personalised attention.</p>
+                <div class="section-label">НАШИ ПРОГРАММЫ</div>
+                <h2 class="section-title">Курсы для каждой маленькой звездочки</h2>
+                <p class="section-subtitle">Мы предлагаем различные курсы английского для юных учеников — от абсолютных новичков до продвинутых. Маленькие группы и индивидуальное внимание.</p>
             </div>
             <div class="courses-grid">
                 <div class="course-card">
                     <div class="card-icon card-icon-1">&#127752;</div>
                     <div class="card-body">
-                        <h3>Little Explorers</h3>
-                        <span class="age-tag">Ages 3–5</span>
-                        <p>A playful introduction to English through songs, stories, and creative activities. Building first words and confidence.</p>
+                        <h3>Маленькие исследователи</h3>
+                        <span class="age-tag">3–5 лет</span>
+                        <p>Игровое знакомство с английским через песни, рассказы и творческие занятия. Строим первые слова и уверенность.</p>
                         <ul>
-                            <li>Basic vocabulary &amp; pronunciation</li>
-                            <li>Songs, rhymes &amp; movement</li>
-                            <li>Storytelling &amp; picture books</li>
-                            <li>Creative arts in English</li>
+                            <li>Базовый словарь и произношение</li>
+                            <li>Песни, стихи и движение</li>
+                            <li>Рассказывание историй</li>
+                            <li>Творческие занятия на английском</li>
                         </ul>
-                        <a href="#contact" class="card-link">Learn more &#10132;</a>
+                        <a href="#contact" class="card-link">Узнать больше &#10132;</a>
                     </div>
                 </div>
                 <div class="course-card">
                     <div class="card-icon card-icon-2">&#11088;</div>
                     <div class="card-body">
-                        <h3>Rising Stars</h3>
-                        <span class="age-tag">Ages 6–9</span>
-                        <p>Building solid foundations in reading, writing, and conversation through interactive games and engaging projects.</p>
+                        <h3>Восходящие звезды</h3>
+                        <span class="age-tag">6–9 лет</span>
+                        <p>Строим прочные основы чтения, письма и разговорной речи через интерактивные игры и увлекательные проекты.</p>
                         <ul>
-                            <li>Reading &amp; writing fundamentals</li>
-                            <li>Conversation practice</li>
-                            <li>Grammar through games</li>
-                            <li>Show &amp; tell projects</li>
+                            <li>Основы чтения и письма</li>
+                            <li>Разговорная практика</li>
+                            <li>Грамматика через игры</li>
+                            <li>Проекты "Покажи и расскажи"</li>
                         </ul>
-                        <a href="#contact" class="card-link">Learn more &#10132;</a>
+                        <a href="#contact" class="card-link">Узнать больше &#10132;</a>
                     </div>
                 </div>
                 <div class="course-card">
                     <div class="card-icon card-icon-3">&#127775;</div>
                     <div class="card-body">
-                        <h3>Super Stars</h3>
-                        <span class="age-tag">Ages 10–14</span>
-                        <p>Advanced skills for confident communicators. Fluency building, critical thinking, and exam preparation support.</p>
+                        <h3>Супер звезды</h3>
+                        <span class="age-tag">10–14 лет</span>
+                        <p>Продвинутые навыки для уверенных коммуникаторов. Развитие беглости, критическое мышление и подготовка к экзаменам.</p>
                         <ul>
-                            <li>Advanced conversation &amp; debate</li>
-                            <li>Essay &amp; creative writing</li>
-                            <li>Cambridge exam prep (optional)</li>
-                            <li>Presentation skills</li>
+                            <li>Продвинутый разговор и дебаты</li>
+                            <li>Эссе и творческое письмо</li>
+                            <li>Подготовка к Cambridge (опционально)</li>
+                            <li>Навыки презентации</li>
                         </ul>
-                        <a href="#contact" class="card-link">Learn more &#10132;</a>
+                        <a href="#contact" class="card-link">Узнать больше &#10132;</a>
                     </div>
                 </div>
                 <div class="course-card">
                     <div class="card-icon card-icon-4">&#127941;</div>
                     <div class="card-body">
-                        <h3>Teen Stars</h3>
-                        <span class="age-tag">Ages 15–18</span>
-                        <p>Designed for teens who want to master English for school, travel, university entrance, or future careers.</p>
+                        <h3>Подростковые звезды</h3>
+                        <span class="age-tag">15–18 лет</span>
+                        <p>Для подростков, которые хотят овладеть английским для учебы, путешествий, поступления в университет или будущей карьеры.</p>
                         <ul>
-                            <li>Academic English &amp; study skills</li>
-                            <li>IELTS &amp; Cambridge preparation</li>
-                            <li>Public speaking &amp; interviews</li>
-                            <li>Real-world communication</li>
+                            <li>Академический английский</li>
+                            <li>Подготовка к IELTS и Cambridge</li>
+                            <li>Публичные выступления и интервью</li>
+                            <li>Общение в реальном мире</li>
                         </ul>
-                        <a href="#contact" class="card-link">Learn more &#10132;</a>
+                        <a href="#contact" class="card-link">Узнать больше &#10132;</a>
                     </div>
                 </div>
             </div>
@@ -1233,39 +1241,39 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-content">
-                    <div class="section-label">Meet the Teacher</div>
-                    <h2>About Ruby</h2>
-                    <p>Hello! I'm Ruby, the founder of Little English Star School. With a deep love for languages and children, I've dedicated my career to helping young learners discover the joy of English.</p>
-                    <p>After living in New Zealand for seven years and earning my degree in English Literature, I gained a deep understanding of the language and culture. My five years of experience in Montessori schools taught me how children learn best — through play, exploration, and encouragement.</p>
-                    <p>I hold a 120-Hour TESOL/TEFL Certification and an IELTS score of 7.5 (C1 level), ensuring your child receives instruction from a highly qualified teacher.</p>
+                    <div class="section-label">ПОЗНАКОМЬТЕСЬ С УЧИТЕЛЕМ</div>
+                    <h2>О Руби</h2>
+                    <p>Привет! Я Руби, основатель Little English Star School. С глубокой любовью к языкам и детям я посвятила свою карьеру тому, чтобы помочь юным ученикам открыть для себя радость английского языка.</p>
+                    <p>Прожив семь лет в Новой Зеландии и получив степень по английской литературе, я глубоко поняла язык и культуру. Мой пятилетний опыт в школах Монтессори научил меня, как дети учатся лучше всего — через игру, исследование и поощрение.</p>
+                    <p>Я имею 120-часовой сертификат TESOL/TEFL и результат IELTS 7.5 (уровень C1), что гарантирует вашему ребенку обучение от высококвалифицированного преподавателя.</p>
                     <div class="credentials">
                         <div class="credential">
                             <div class="cred-icon">&#127891;</div>
                             <strong>TESOL/TEFL</strong>
-                            <span>120-Hour Certified</span>
+                            <span>120-часовой сертификат</span>
                         </div>
                         <div class="credential">
                             <div class="cred-icon">&#128214;</div>
-                            <strong>English Literature</strong>
-                            <span>University Degree</span>
+                            <strong>Английская литература</strong>
+                            <span>Университетская степень</span>
                         </div>
                         <div class="credential">
                             <div class="cred-icon">&#127463;&#127462;</div>
                             <strong>IELTS 7.5</strong>
-                            <span>C1 Advanced Level</span>
+                            <span>Уровень C1 Advanced</span>
                         </div>
                         <div class="credential">
                             <div class="cred-icon">&#128118;</div>
-                            <strong>Montessori</strong>
-                            <span>5 Years Experience</span>
+                            <strong>Монтессори</strong>
+                            <span>5 лет опыта</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="images/about.jpg" alt="Learning environment at Little English Star School">
+                    <img src="../images/about.jpg" alt="Учебная среда Little English Star School">
                     <div class="experience-badge">
                         <div class="num">12+</div>
-                        <div class="label">Years of<br>Experience</div>
+                        <div class="label">Лет<br>опыта</div>
                     </div>
                 </div>
             </div>
@@ -1276,30 +1284,30 @@
     <section class="approach">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Our Method</div>
-                <h2 class="section-title">How We Teach</h2>
-                <p class="section-subtitle">Our teaching approach combines the best of Montessori methods with modern language learning techniques.</p>
+                <div class="section-label">НАШ МЕТОД</div>
+                <h2 class="section-title">Как мы преподаем</h2>
+                <p class="section-subtitle">Наш подход к обучению сочетает лучшие методы Монтессори с современными техниками изучения языков.</p>
             </div>
             <div class="approach-grid">
                 <div class="approach-card">
                     <div class="approach-icon">&#127922;</div>
-                    <h3>Learn by Playing</h3>
-                    <p>Games, role-play, and hands-on activities keep kids engaged and make learning feel like fun, not work.</p>
+                    <h3>Учимся играя</h3>
+                    <p>Игры, ролевые игры и практические задания удерживают внимание детей и делают обучение похожим на развлечение, а не на работу.</p>
                 </div>
                 <div class="approach-card">
                     <div class="approach-icon">&#128483;</div>
-                    <h3>Speak from Day 1</h3>
-                    <p>We encourage speaking from the very first class. Building confidence to communicate is our top priority.</p>
+                    <h3>Говорим с первого дня</h3>
+                    <p>Мы поощряем разговор с самого первого занятия. Развитие уверенности в общении — наш главный приоритет.</p>
                 </div>
                 <div class="approach-card">
                     <div class="approach-icon">&#128101;</div>
-                    <h3>Small Groups</h3>
-                    <p>Maximum 6 students per class ensures every child gets personal attention and plenty of practice time.</p>
+                    <h3>Маленькие группы</h3>
+                    <p>Максимум 6 учеников в классе гарантирует, что каждый ребенок получит персональное внимание и достаточно времени для практики.</p>
                 </div>
                 <div class="approach-card">
                     <div class="approach-icon">&#128150;</div>
-                    <h3>Positive Environment</h3>
-                    <p>A warm, supportive atmosphere where mistakes are celebrated as steps towards mastery.</p>
+                    <h3>Позитивная атмосфера</h3>
+                    <p>Теплая, поддерживающая атмосфера, где ошибки отмечаются как шаги к мастерству.</p>
                 </div>
             </div>
         </div>
@@ -1310,22 +1318,22 @@
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <div class="section-label">Get in Touch</div>
-                    <h2>Contact Us</h2>
-                    <p>Ready to help your child shine? Book a free trial class or ask us any questions. We'd love to hear from you!</p>
+                    <div class="section-label">СВЯЖИТЕСЬ С НАМИ</div>
+                    <h2>Контакты</h2>
+                    <p>Готовы помочь вашему ребенку засиять? Забронируйте бесплатный пробный урок или задайте любые вопросы. Мы будем рады услышать вас!</p>
                     <div class="contact-methods">
                         <div class="contact-method">
                             <div class="method-icon">&#128222;</div>
                             <div>
-                                <strong>Phone / WhatsApp</strong>
+                                <strong>Телефон / WhatsApp</strong>
                                 <a href="https://wa.me/34627770000">+34 627 770 000</a>
                             </div>
                         </div>
                         <div class="contact-method">
                             <div class="method-icon">&#128205;</div>
                             <div>
-                                <strong>Location</strong>
-                                <span>Calle 295, 9, Paterna<br>Valencia 46182, Spain</span>
+                                <strong>Местоположение</strong>
+                                <span>Calle 295, 9, Paterna<br>Valencia 46182, Испания</span>
                             </div>
                         </div>
                     </div>
@@ -1334,20 +1342,20 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <h3>Send Us a Message</h3>
+                    <h3>Отправить сообщение</h3>
                     <form action="https://formsubmit.co/li@joyfulyoga.kiwi.nz" method="POST">
-                        <input type="hidden" name="_subject" value="New inquiry from Little English Star website">
-                        <input type="hidden" name="_next" value="https://www.littleenglishstar.com/thank-you.html">
+                        <input type="hidden" name="_subject" value="Новый запрос с сайта Little English Star (RU)">
+                        <input type="hidden" name="_next" value="https://www.littleenglishstar.com/ru/spasibo.html">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="text" name="_honey" style="display:none">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" name="name" placeholder="e.g. Maria García" required>
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" placeholder="например, Мария Гарсия" required>
                             </div>
                             <div class="form-group">
-                                <label for="phone">Phone</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Номер телефона">
                             </div>
                         </div>
                         <div class="form-group">
@@ -1355,20 +1363,20 @@
                             <input type="email" id="email" name="email" placeholder="your@email.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="child-age">Child's Age</label>
+                            <label for="child-age">Возраст ребенка</label>
                             <select id="child-age" name="child-age">
-                                <option value="">Select age range</option>
-                                <option value="3-5">3–5 years</option>
-                                <option value="6-9">6–9 years</option>
-                                <option value="10-14">10–14 years</option>
-                                <option value="15-18">15–18 years</option>
+                                <option value="">Выберите возраст</option>
+                                <option value="3-5">3–5 лет</option>
+                                <option value="6-9">6–9 лет</option>
+                                <option value="10-14">10–14 лет</option>
+                                <option value="15-18">15–18 лет</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Tell us about your child and what you're looking for..." required></textarea>
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" placeholder="Расскажите нам о вашем ребенке и что вы ищете..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message &#10132;</button>
+                        <button type="submit" class="btn btn-primary">Отправить сообщение &#10132;</button>
                     </form>
                 </div>
             </div>
@@ -1381,12 +1389,12 @@
             <div class="footer-copyright">
                 &copy; 2026 Little English Star School | Built by <a href="https://gobizit.ai" target="_blank" rel="noopener">GoBizIT.ai</a>
             </div>
-            <a href="https://www.littlemandarinstar.com" target="_blank" rel="noopener" class="footer-sister-link">Also visit: Little Mandarin Star</a>
+            <a href="https://www.littlemandarinstar.com" target="_blank" rel="noopener" class="footer-sister-link">Также посетите: Little Mandarin Star</a>
         </div>
     </footer>
 
     <!-- ====== WHATSAPP BUTTON ====== -->
-    <a href="https://wa.me/34627770000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/34627770000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Чат в WhatsApp">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
         </svg>
@@ -1414,7 +1422,7 @@
         // Form submission - button feedback
         document.querySelector('.contact-form form').addEventListener('submit', function() {
             const btn = this.querySelector('button');
-            btn.textContent = 'Sending...';
+            btn.textContent = 'Отправка...';
             btn.disabled = true;
         });
 
@@ -1442,8 +1450,8 @@
         "@context": "https://schema.org",
         "@type": "EducationalOrganization",
         "name": "Little English Star School",
-        "description": "Fun and effective English classes for children in La Cañada, Paterna, Valencia. TESOL-certified teacher with Montessori experience.",
-        "url": "https://www.littleenglishstar.com",
+        "description": "Увлекательные и эффективные уроки английского для детей в Ла Каньяда, Патерна, Валенсия. Сертифицированный TESOL преподаватель с опытом Монтессори.",
+        "url": "https://www.littleenglishstar.com/ru/",
         "logo": "https://www.littleenglishstar.com/littleenglishstar-logo.png",
         "telephone": "+34627770000",
         "email": "ruby@littleenglishstar.com",
