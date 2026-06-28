@@ -1017,31 +1017,110 @@
         }
 
         /* ============ LANGUAGE SWITCHER ============ */
-        .lang-switch {
+        .language-selector {
+            position: relative;
+            margin-left: 8px;
+        }
+
+        .lang-toggle {
             display: inline-flex;
             align-items: center;
-            gap: 4px;
-            padding: 6px 10px;
+            gap: 6px;
+            padding: 8px 16px;
             background: var(--bg-light);
             border: 2px solid #e0e0e0;
             border-radius: 50px;
             font-family: 'Montserrat', sans-serif;
-            font-size: 0.75rem;
+            font-size: 0.85rem;
             font-weight: 700;
             color: var(--text-medium);
+            cursor: pointer;
             transition: var(--transition);
         }
 
-        .lang-switch:hover {
+        .lang-toggle:hover {
             border-color: var(--primary);
             color: var(--primary);
             background: var(--white);
         }
 
-        .lang-switch svg {
+        .lang-toggle .current-lang {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .lang-toggle svg {
             vertical-align: middle;
             border-radius: 2px;
             box-shadow: 0 0 1px rgba(0,0,0,0.3);
+        }
+
+        .lang-dropdown {
+            display: none;
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            padding: 8px;
+            min-width: 200px;
+            z-index: 1001;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .lang-dropdown.show {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .lang-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 12px;
+            border-radius: 8px;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .lang-option:hover {
+            background: var(--bg-light);
+        }
+
+        .lang-option.active {
+            background: rgba(46,107,198,0.1);
+        }
+
+        .lang-option svg {
+            flex-shrink: 0;
+            border-radius: 2px;
+            box-shadow: 0 0 1px rgba(0,0,0,0.3);
+        }
+
+        .lang-option .lang-code {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 24px;
+        }
+
+        .lang-option .lang-name {
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            font-weight: 500;
         }
     </style>
 </head>
@@ -1061,8 +1140,29 @@
                 <a href="#courses">Courses</a>
                 <a href="#about">About</a>
                 <a href="#contact" class="cta-btn">Contact Us</a>
-                <a href="/es/" class="lang-switch">ES <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" fill="#c60b1e"/><rect y="3.5" width="20" height="7" fill="#ffc400"/></svg></a>
-                <a href="/ru/" class="lang-switch">RU <svg width="20" height="14" viewBox="0 0 9 6"><rect width="9" height="2" fill="#fff"/><rect y="2" width="9" height="2" fill="#0039a6"/><rect y="4" width="9" height="2" fill="#d52b1e"/></svg></a>
+                <div class="language-selector">
+                    <button class="lang-toggle" onclick="toggleLangMenu()" aria-label="Select language">
+                        🌐 <span class="current-lang">EN</span>
+                        <svg width="20" height="14" viewBox="0 0 60 30"><clipPath id="a"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="b"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#a)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#b)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <a href="/" class="lang-option active">
+                            <svg width="20" height="14" viewBox="0 0 60 30"><clipPath id="c"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="d"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#c)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#d)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+                            <span class="lang-code">EN</span>
+                            <span class="lang-name">English</span>
+                        </a>
+                        <a href="/es/" class="lang-option">
+                            <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" fill="#c60b1e"/><rect y="3.5" width="20" height="7" fill="#ffc400"/></svg>
+                            <span class="lang-code">ES</span>
+                            <span class="lang-name">Spanish</span>
+                        </a>
+                        <a href="/ru/" class="lang-option">
+                            <svg width="20" height="14" viewBox="0 0 9 6"><rect width="9" height="2" fill="#fff"/><rect y="2" width="9" height="2" fill="#0039a6"/><rect y="4" width="9" height="2" fill="#d52b1e"/></svg>
+                            <span class="lang-code">RU</span>
+                            <span class="lang-name">Русский</span>
+                        </a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -1394,6 +1494,21 @@
 
     <!-- ====== SCRIPTS ====== -->
     <script>
+        // Language selector toggle
+        function toggleLangMenu() {
+            const dropdown = document.getElementById('langDropdown');
+            dropdown.classList.toggle('show');
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const langSelector = document.querySelector('.language-selector');
+            const dropdown = document.getElementById('langDropdown');
+            if (langSelector && !langSelector.contains(event.target)) {
+                dropdown.classList.remove('show');
+            }
+        });
+
         // Close mobile menu when clicking a link
         document.querySelectorAll('nav a').forEach(link => {
             link.addEventListener('click', () => {
