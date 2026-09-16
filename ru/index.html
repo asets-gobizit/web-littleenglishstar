@@ -1435,11 +1435,11 @@
                 </div>
                 <div class="contact-form">
                     <h3>Отправить сообщение</h3>
-                    <form action="https://formsubmit.co/li@joyfulyoga.kiwi.nz" method="POST">
+                    <form id="contact-form" action="https://formsubmit.co/li@joyfulyoga.kiwi.nz" method="POST" novalidate>
                         <input type="hidden" name="_subject" value="Новый запрос с сайта Little English Star (RU)">
                         <input type="hidden" name="_next" value="https://www.littleenglishstar.com/ru/spasibo.html">
-                        <input type="hidden" name="_captcha" value="true">
-                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Ваше имя</label>
@@ -1447,7 +1447,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="phone">Телефон</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+                                <input type="tel" id="phone" name="phone" placeholder="Номер телефона" inputmode="tel" pattern="\+?[0-9]{7,15}" maxlength="16" title="Только цифры (можно + в начале), 7–15 цифр" required>
                             </div>
                         </div>
                         <div class="form-group">
@@ -1468,6 +1468,20 @@
                             <label for="message">Сообщение</label>
                             <textarea id="message" name="message" placeholder="Расскажите нам о вашем ребенке и что вы ищете..." required></textarea>
                         </div>
+                        <div class="form-group">
+                            <label for="human-check">Проверка: 1 + 0.99 = ?</label>
+                            <select id="human-check" required>
+                                <option value="">Выберите ответ</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="1.99">1.99</option>
+                                <option value="99.1">99.1</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="4.99">4.99</option>
+                            </select>
+                        </div>
+                        <p id="form-status" class="form-status" role="alert" hidden></p>
                         <button type="submit" class="btn btn-primary">Отправить сообщение &#10132;</button>
                     </form>
                 </div>
@@ -1526,12 +1540,6 @@
             }
         });
 
-        // Form submission - button feedback
-        document.querySelector('.contact-form form').addEventListener('submit', function() {
-            const btn = this.querySelector('button');
-            btn.textContent = 'Отправка...';
-            btn.disabled = true;
-        });
 
         // Animate elements on scroll
         const observer = new IntersectionObserver((entries) => {
@@ -1577,5 +1585,75 @@
         }
     }
     </script>
+    <!-- ====== CONTACT FORM ====== -->
+    <style>
+        .form-status { margin: 0 0 16px; padding: 12px 14px; border-radius: 10px; background: #fdecec; color: #b42318; font-size: 0.95rem; line-height: 1.5; }
+        .form-status a { color: inherit; font-weight: 600; }
+        .form-group input.invalid, .form-group select.invalid, .form-group textarea.invalid { border-color: #d92d20; }
+    </style>
+    <script>
+    (function () {
+        var form = document.getElementById('contact-form');
+        if (!form) return;
+        var T = {"wrong": "Неверный ответ на проверку. Попробуйте ещё раз.", "sending": "Отправка…", "fail": "Не удалось отправить сообщение. Попробуйте ещё раз или напишите нам в WhatsApp: <a href=\"https://wa.me/34627770000\" target=\"_blank\" rel=\"noopener\">+34 627 770 000</a>", "next": "https://www.littleenglishstar.com/ru/spasibo.html"};
+        var phone = form.querySelector('#phone');
+        var check = form.querySelector('#human-check');
+        var status = form.querySelector('#form-status');
+        var btn = form.querySelector('button[type="submit"]');
+        var btnHtml = btn.innerHTML;
+
+        // Phone: digits only (one leading + allowed)
+        phone.addEventListener('input', function () {
+            var v = phone.value, plus = v.trim().charAt(0) === '+';
+            phone.value = (plus ? '+' : '') + v.replace(/[^0-9]/g, '').slice(0, 15);
+        });
+
+        function showError(html) { status.innerHTML = html; status.hidden = false; }
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            status.hidden = true;
+            var fields = form.querySelectorAll('input[required], select[required], textarea[required]');
+            var firstBad = null;
+            fields.forEach(function (f) {
+                if (f.tagName === 'TEXTAREA' || f.type === 'text') { if (!f.value.trim()) f.value = ''; }
+                var ok = f.checkValidity();
+                f.classList.toggle('invalid', !ok);
+                if (!ok && !firstBad) firstBad = f;
+            });
+            if (firstBad) { firstBad.reportValidity(); firstBad.focus(); return; }
+            if (check.value !== '1.99') {
+                check.classList.add('invalid');
+                showError(T.wrong);
+                check.value = '';
+                check.focus();
+                return;
+            }
+            if (form.querySelector('[name="_honey"]').value) { window.location.href = T.next; return; }
+
+            btn.disabled = true;
+            btn.innerHTML = T.sending;
+            fetch('https://formsubmit.co/ajax/li@joyfulyoga.kiwi.nz', {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: new FormData(form)
+            })
+            .then(function (r) { return r.json().catch(function () { return {}; }).then(function (d) { return { ok: r.ok, d: d }; }); })
+            .then(function (res) {
+                if (res.ok && String(res.d.success) === 'true') { window.location.href = T.next; return; }
+                throw new Error(res.d.message || 'send failed');
+            })
+            .catch(function (err) {
+                console.error('Contact form:', err);
+                showError(T.fail);
+                btn.disabled = false;
+                btn.innerHTML = btnHtml;
+            });
+        });
+
+        form.addEventListener('change', function (e) { if (e.target.checkValidity()) e.target.classList.remove('invalid'); });
+    })();
+    </script>
+
 </body>
 </html>
